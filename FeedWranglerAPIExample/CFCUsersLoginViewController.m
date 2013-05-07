@@ -33,6 +33,8 @@
     
     NSString* loginURL = [API_URL_PREFIX stringByAppendingFormat:@"users/authorize?email=%@&password=%@&client_key=%@", [self encodeText:self.emailAddress.text], [self encodeText:self.password.text], CLIENT_ID];
     NSLog(@"LOGIN: %@", loginURL);
+    [self updateOutput:@""];
+
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:loginURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {

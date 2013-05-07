@@ -21,6 +21,8 @@
     [self.feedURL resignFirstResponder];
     NSString* addSubscriptionURL = [API_URL_PREFIX stringByAppendingFormat:@"subscriptions/add_feed?access_token=%@&feed_url=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"], [self encodeText:self.feedURL.text]];
     NSLog(@"Add Subscription: %@", addSubscriptionURL);
+    [self updateOutput:@""];
+
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:addSubscriptionURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {

@@ -19,6 +19,8 @@
     [self.feedID resignFirstResponder];
     NSString* removeSubscriptionURL = [API_URL_PREFIX stringByAppendingFormat:@"subscriptions/remove_feed?access_token=%@&feed_id=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"], [self encodeText:self.feedID.text]];
     NSLog(@"Remove Subscription: %@", removeSubscriptionURL);
+    [self updateOutput:@""];
+
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:removeSubscriptionURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {

@@ -19,6 +19,7 @@
     NSString* streamsURL = [API_URL_PREFIX stringByAppendingFormat:@"streams/list?access_token=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]];
     NSLog(@"Load Streams: %@", streamsURL);
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:streamsURL]];
+    [self updateOutput:@""];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {
             NSError* jsonError = nil;

@@ -65,6 +65,8 @@
     }
     
     NSLog(@"Feed Items: %@", feedItemsURL);
+    [self updateOutput:@""];
+
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:feedItemsURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {

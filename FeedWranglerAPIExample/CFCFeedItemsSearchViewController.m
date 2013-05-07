@@ -38,6 +38,8 @@
     searchURL = [searchURL stringByAppendingFormat:@"&search_term=%@", [self encodeText:self.searchTerm.text]];
     
     NSLog(@"Search: %@", searchURL);
+    [self updateOutput:@""];
+
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:searchURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {

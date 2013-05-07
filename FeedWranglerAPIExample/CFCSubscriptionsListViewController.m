@@ -19,6 +19,8 @@
     
     NSString* subscriptionsURL = [API_URL_PREFIX stringByAppendingFormat:@"subscriptions/list?access_token=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]];
     NSLog(@"Load Subscriptions: %@", subscriptionsURL);
+    [self updateOutput:@""];
+
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:subscriptionsURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {

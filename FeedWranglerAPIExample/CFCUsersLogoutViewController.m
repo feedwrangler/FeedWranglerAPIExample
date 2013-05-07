@@ -26,6 +26,10 @@
         
     NSString* logoutURL = [API_URL_PREFIX stringByAppendingFormat:@"users/logout?access_token=%@&client_key=%@", self.currentToken.text, CLIENT_ID];
     NSLog(@"LOGOUT: %@", logoutURL);
+    
+    [self updateOutput:@""];
+
+    
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:logoutURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {
