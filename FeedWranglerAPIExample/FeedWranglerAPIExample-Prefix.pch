@@ -12,3 +12,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define CLIENT_ID @""
+#warning Please Enter your CLIENT_ID
+
+#define API_URL_PREFIX @"https://feedwrangler.net/api/v2/"

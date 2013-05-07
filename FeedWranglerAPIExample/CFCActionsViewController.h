@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class CFCDetailViewController;
 
-@interface CFCMasterViewController : UITableViewController
+@interface CFCActionsViewController : UITableViewController
 
-@property (strong, nonatomic) CFCDetailViewController *detailViewController;
+@property (strong, nonatomic) UIViewController *detailViewController;
 
 @end
