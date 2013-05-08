@@ -18,6 +18,9 @@
 #import "CFCStreamsListViewController.h"
 #import "CFCStreamsStreamItemsViewController.h"
 #import "CFCFeedItemsSearchViewController.h"
+#import "CFCFeedItemsChangedViewController.h"
+#import "CFCFeedItemsGetViewController.h"
+#import "CFCStreamStreamItemIdsViewController.h"
 
 @interface CFCActionsViewController ()
 
@@ -65,11 +68,11 @@
     }
 
     if (section == 2) {
-        return 4;
+        return 6;
     }
 
     if (section == 3) {
-        return 2;
+        return 3;
     }
 
     return 0;
@@ -108,13 +111,19 @@
         cell.textLabel.text = @"Get Feed Items";
     }
     if(indexPath.section == 2 && indexPath.row == 1) {
-        cell.textLabel.text = @"Update Feed Item";
+        cell.textLabel.text = @"Get Changed Item IDs";
     }
     if(indexPath.section == 2 && indexPath.row == 2) {
-        cell.textLabel.text = @"Mark All Feed Items Read";
+        cell.textLabel.text = @"Update Feed Item";
     }
     if(indexPath.section == 2 && indexPath.row == 3) {
+        cell.textLabel.text = @"Mark All Feed Items Read";
+    }
+    if(indexPath.section == 2 && indexPath.row == 4) {
         cell.textLabel.text = @"Search for Feed Items";
+    }
+    if(indexPath.section == 2 && indexPath.row == 5) {
+        cell.textLabel.text = @"Get Specific Feed Items";
     }
 
     
@@ -123,6 +132,9 @@
     }
     if(indexPath.section == 3 && indexPath.row == 1) {
         cell.textLabel.text = @"Get Stream Items";
+    }
+    if(indexPath.section == 3 && indexPath.row == 2) {
+        cell.textLabel.text = @"Get Stream Item IDs";
     }
     
     return cell;
@@ -152,21 +164,29 @@
         self.detailViewController = [[CFCFeedItemsListViewController alloc] initWithNibName:@"CFCFeedItemsListViewController" bundle:nil];
     }
     if(indexPath.section == 2 && indexPath.row == 1) {
-        self.detailViewController = [[CFCFeedItemsUpdateViewController alloc] initWithNibName:@"CFCFeedItemsUpdateViewController" bundle:nil];
+        self.detailViewController = [[CFCFeedItemsChangedViewController alloc] initWithNibName:@"CFCFeedItemsChangedViewController" bundle:nil];
     }
     if(indexPath.section == 2 && indexPath.row == 2) {
-        self.detailViewController = [[CFCFeedItemsMarkAllReadViewController alloc] initWithNibName:@"CFCFeedItemsMarkAllReadViewController" bundle:nil];
+        self.detailViewController = [[CFCFeedItemsUpdateViewController alloc] initWithNibName:@"CFCFeedItemsUpdateViewController" bundle:nil];
     }
     if(indexPath.section == 2 && indexPath.row == 3) {
+        self.detailViewController = [[CFCFeedItemsMarkAllReadViewController alloc] initWithNibName:@"CFCFeedItemsMarkAllReadViewController" bundle:nil];
+    }
+    if(indexPath.section == 2 && indexPath.row == 4) {
         self.detailViewController = [[CFCFeedItemsSearchViewController alloc] initWithNibName:@"CFCFeedItemsSearchViewController" bundle:nil];
     }
-
+    if(indexPath.section == 2 && indexPath.row == 5) {
+        self.detailViewController = [[CFCFeedItemsGetViewController alloc] initWithNibName:@"CFCFeedItemsGetViewController" bundle:nil];
+    }
     
     if(indexPath.section == 3 && indexPath.row == 0) {
         self.detailViewController = [[CFCStreamsListViewController alloc] initWithNibName:@"CFCStreamsListViewController" bundle:nil];
     }
     if(indexPath.section == 3 && indexPath.row == 1) {
         self.detailViewController = [[CFCStreamsStreamItemsViewController alloc] initWithNibName:@"CFCStreamsStreamItemsViewController" bundle:nil];
+    }
+    if(indexPath.section == 3 && indexPath.row == 2) {
+        self.detailViewController = [[CFCStreamStreamItemIdsViewController alloc] initWithNibName:@"CFCStreamStreamItemIdsViewController" bundle:nil];
     }
 
     

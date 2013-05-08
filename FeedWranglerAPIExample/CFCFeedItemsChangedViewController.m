@@ -1,34 +1,27 @@
 //
-//  CFCFeedItemsListViewController.m
+//  CFCFeedItemsChangedViewController.m
 //  FeedWranglerAPIExample
 //
-//  Created by David Smith on 5/6/13.
+//  Created by David Smith on 5/8/13.
 //  Copyright (c) 2013 Developing Perspective, LLC. All rights reserved.
 //
 
-#import "CFCFeedItemsListViewController.h"
+#import "CFCFeedItemsChangedViewController.h"
 
-@interface CFCFeedItemsListViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *limitFilter;
-@property (weak, nonatomic) IBOutlet UITextField *offsetFilter;
-@property (weak, nonatomic) IBOutlet UITextField *feedID;
-
+@interface CFCFeedItemsChangedViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *createdFilter;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *starredFilter;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *readFilter;
 @end
 
-@implementation CFCFeedItemsListViewController
+@implementation CFCFeedItemsChangedViewController
 
 - (IBAction)loadFeedItems:(id)sender {
-    [self.limitFilter resignFirstResponder];
-    [self.offsetFilter resignFirstResponder];
-    [self.feedID resignFirstResponder];
     [self.createdFilter resignFirstResponder];
     
-    NSString* feedItemsURL = [API_URL_PREFIX stringByAppendingFormat:@"feed_items/list?access_token=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]];
+    NSString* feedItemsURL = [API_URL_PREFIX stringByAppendingFormat:@"feed_items/changed?access_token=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]];
     
-    //Limit based on read status
+        //Limit based on read status
     if(self.readFilter.selectedSegmentIndex == 1) {
         feedItemsURL = [feedItemsURL stringByAppendingString:@"&read=true"];
     }
@@ -36,7 +29,7 @@
         feedItemsURL = [feedItemsURL stringByAppendingString:@"&read=false"];
     }
     
-    //Limit based on starred status
+        //Limit based on starred status
     if(self.starredFilter.selectedSegmentIndex == 1) {
         feedItemsURL = [feedItemsURL stringByAppendingString:@"&starred=true"];
     }
@@ -44,29 +37,14 @@
         feedItemsURL = [feedItemsURL stringByAppendingString:@"&starred=false"];
     }
     
-    //Limit based on published_at
+        //Limit based on published_at
     if(self.createdFilter.text.length > 0) {
         feedItemsURL = [feedItemsURL stringByAppendingFormat:@"&updated_since=%@", self.createdFilter.text];
     }
-
-    //Limit number of results
-    if(self.limitFilter.text.length > 0) {
-        feedItemsURL = [feedItemsURL stringByAppendingFormat:@"&limit=%@", self.limitFilter.text];
-    }
     
-    //Page Offset
-    if(self.offsetFilter.text.length > 0) {
-        feedItemsURL = [feedItemsURL stringByAppendingFormat:@"&offset=%@", self.offsetFilter.text];
-    }
-
-    //Feed ID filter
-    if(self.feedID.text.length > 0) {
-        feedItemsURL = [feedItemsURL stringByAppendingFormat:@"&feed_id=%@", self.feedID.text];
-    }
     
-    NSLog(@"Feed Items: %@", feedItemsURL);
+    NSLog(@"Changed Feed Items: %@", feedItemsURL);
     [self updateOutput:@""];
-
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:feedItemsURL]];
     [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         if ([data length] > 0 && error == nil) {
@@ -84,5 +62,4 @@
     
     
 }
-
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2734C75173AAA6A00906D7F /* CFCFeedItemsChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2734C73173AAA6A00906D7F /* CFCFeedItemsChangedViewController.m */; };
+		E2734C76173AAA6A00906D7F /* CFCFeedItemsChangedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2734C74173AAA6A00906D7F /* CFCFeedItemsChangedViewController.xib */; };
+		E2734C7A173AAFEC00906D7F /* CFCFeedItemsGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2734C78173AAFEC00906D7F /* CFCFeedItemsGetViewController.m */; };
+		E2734C7B173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2734C79173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib */; };
+		E2734C7F173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2734C7D173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m */; };
+		E2734C80173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2734C7E173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib */; };
 		E2E17E381738115E007B5FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E17E371738115E007B5FF0 /* UIKit.framework */; };
 		E2E17E3A1738115E007B5FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E17E391738115E007B5FF0 /* Foundation.framework */; };
 		E2E17E3C1738115E007B5FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E17E3B1738115E007B5FF0 /* CoreGraphics.framework */; };
@@ -43,6 +49,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2734C72173AAA6A00906D7F /* CFCFeedItemsChangedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCFeedItemsChangedViewController.h; sourceTree = "<group>"; };
+		E2734C73173AAA6A00906D7F /* CFCFeedItemsChangedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCFeedItemsChangedViewController.m; sourceTree = "<group>"; };
+		E2734C74173AAA6A00906D7F /* CFCFeedItemsChangedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCFeedItemsChangedViewController.xib; sourceTree = "<group>"; };
+		E2734C77173AAFEC00906D7F /* CFCFeedItemsGetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCFeedItemsGetViewController.h; sourceTree = "<group>"; };
+		E2734C78173AAFEC00906D7F /* CFCFeedItemsGetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCFeedItemsGetViewController.m; sourceTree = "<group>"; };
+		E2734C79173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCFeedItemsGetViewController.xib; sourceTree = "<group>"; };
+		E2734C7C173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCStreamStreamItemIdsViewController.h; sourceTree = "<group>"; };
+		E2734C7D173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCStreamStreamItemIdsViewController.m; sourceTree = "<group>"; };
+		E2734C7E173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCStreamStreamItemIdsViewController.xib; sourceTree = "<group>"; };
 		E2E17E341738115E007B5FF0 /* FeedWranglerAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedWranglerAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E17E371738115E007B5FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2E17E391738115E007B5FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -222,6 +237,12 @@
 				E2E17E9D17384137007B5FF0 /* CFCFeedItemsSearchViewController.h */,
 				E2E17E9E17384137007B5FF0 /* CFCFeedItemsSearchViewController.m */,
 				E2E17E9F17384137007B5FF0 /* CFCFeedItemsSearchViewController.xib */,
+				E2734C72173AAA6A00906D7F /* CFCFeedItemsChangedViewController.h */,
+				E2734C73173AAA6A00906D7F /* CFCFeedItemsChangedViewController.m */,
+				E2734C74173AAA6A00906D7F /* CFCFeedItemsChangedViewController.xib */,
+				E2734C77173AAFEC00906D7F /* CFCFeedItemsGetViewController.h */,
+				E2734C78173AAFEC00906D7F /* CFCFeedItemsGetViewController.m */,
+				E2734C79173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib */,
 			);
 			name = FeedItems;
 			sourceTree = "<group>";
@@ -235,6 +256,9 @@
 				E2E17E9817383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.h */,
 				E2E17E9917383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.m */,
 				E2E17E9A17383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.xib */,
+				E2734C7C173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.h */,
+				E2734C7D173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m */,
+				E2734C7E173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib */,
 			);
 			name = Streams;
 			sourceTree = "<group>";
@@ -306,6 +330,9 @@
 				E2E17E9617383A1F007B5FF0 /* CFCStreamsListViewController.xib in Resources */,
 				E2E17E9C17383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.xib in Resources */,
 				E2E17EA117384137007B5FF0 /* CFCFeedItemsSearchViewController.xib in Resources */,
+				E2734C76173AAA6A00906D7F /* CFCFeedItemsChangedViewController.xib in Resources */,
+				E2734C7B173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib in Resources */,
+				E2734C80173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +358,9 @@
 				E2E17E9517383A1F007B5FF0 /* CFCStreamsListViewController.m in Sources */,
 				E2E17E9B17383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.m in Sources */,
 				E2E17EA017384137007B5FF0 /* CFCFeedItemsSearchViewController.m in Sources */,
+				E2734C75173AAA6A00906D7F /* CFCFeedItemsChangedViewController.m in Sources */,
+				E2734C7A173AAFEC00906D7F /* CFCFeedItemsGetViewController.m in Sources */,
+				E2734C7F173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +475,7 @@
 				E2E17E5F1738115E007B5FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

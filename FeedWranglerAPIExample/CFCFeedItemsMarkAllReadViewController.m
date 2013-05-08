@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *feedID;
 @property (weak, nonatomic) IBOutlet UITextField *createdOnOrBefore;
+@property (weak, nonatomic) IBOutlet UITextField *feedItemIds;
 
 @end
 
@@ -20,6 +21,7 @@
 - (IBAction)markAllRead:(id)sender {
     [self.feedID resignFirstResponder];
     [self.createdOnOrBefore resignFirstResponder];
+    [self.feedItemIds resignFirstResponder];
     
     NSString* markAllReadURL = [API_URL_PREFIX stringByAppendingFormat:@"feed_items/mark_all_read?access_token=%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]];
     
@@ -33,6 +35,10 @@
         markAllReadURL = [markAllReadURL stringByAppendingFormat:@"&created_on_before=%@", self.createdOnOrBefore.text];
     }
     
+    //Update specific feed_items
+    if(self.feedItemIds.text.length > 0) {
+        markAllReadURL = [markAllReadURL stringByAppendingFormat:@"&feed_item_ids=%@", self.feedItemIds.text];
+    }
     NSLog(@"Mark Items Read: %@", markAllReadURL);
     [self updateOutput:@""];
 
