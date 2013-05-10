@@ -46,6 +46,8 @@
 		E2E17E9C17383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E17E9A17383EF6007B5FF0 /* CFCStreamsStreamItemsViewController.xib */; };
 		E2E17EA017384137007B5FF0 /* CFCFeedItemsSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E17E9E17384137007B5FF0 /* CFCFeedItemsSearchViewController.m */; };
 		E2E17EA117384137007B5FF0 /* CFCFeedItemsSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E17E9F17384137007B5FF0 /* CFCFeedItemsSearchViewController.xib */; };
+		E2E84D8B173D3D47008AA142 /* CFCFeedItemsListIdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E84D89173D3D47008AA142 /* CFCFeedItemsListIdsViewController.m */; };
+		E2E84D8C173D3D47008AA142 /* CFCFeedItemsListIdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E84D8A173D3D47008AA142 /* CFCFeedItemsListIdsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,9 @@
 		E2E17E9D17384137007B5FF0 /* CFCFeedItemsSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCFeedItemsSearchViewController.h; sourceTree = "<group>"; };
 		E2E17E9E17384137007B5FF0 /* CFCFeedItemsSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCFeedItemsSearchViewController.m; sourceTree = "<group>"; };
 		E2E17E9F17384137007B5FF0 /* CFCFeedItemsSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCFeedItemsSearchViewController.xib; sourceTree = "<group>"; };
+		E2E84D88173D3D47008AA142 /* CFCFeedItemsListIdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCFeedItemsListIdsViewController.h; sourceTree = "<group>"; };
+		E2E84D89173D3D47008AA142 /* CFCFeedItemsListIdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCFeedItemsListIdsViewController.m; sourceTree = "<group>"; };
+		E2E84D8A173D3D47008AA142 /* CFCFeedItemsListIdsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCFeedItemsListIdsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +233,9 @@
 				E2E17E8317382552007B5FF0 /* CFCFeedItemsListViewController.h */,
 				E2E17E8417382552007B5FF0 /* CFCFeedItemsListViewController.m */,
 				E2E17E8517382552007B5FF0 /* CFCFeedItemsListViewController.xib */,
+				E2E84D88173D3D47008AA142 /* CFCFeedItemsListIdsViewController.h */,
+				E2E84D89173D3D47008AA142 /* CFCFeedItemsListIdsViewController.m */,
+				E2E84D8A173D3D47008AA142 /* CFCFeedItemsListIdsViewController.xib */,
 				E2E17E88173831CA007B5FF0 /* CFCFeedItemsUpdateViewController.h */,
 				E2E17E89173831CA007B5FF0 /* CFCFeedItemsUpdateViewController.m */,
 				E2E17E8A173831CA007B5FF0 /* CFCFeedItemsUpdateViewController.xib */,
@@ -333,6 +341,7 @@
 				E2734C76173AAA6A00906D7F /* CFCFeedItemsChangedViewController.xib in Resources */,
 				E2734C7B173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib in Resources */,
 				E2734C80173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib in Resources */,
+				E2E84D8C173D3D47008AA142 /* CFCFeedItemsListIdsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +370,7 @@
 				E2734C75173AAA6A00906D7F /* CFCFeedItemsChangedViewController.m in Sources */,
 				E2734C7A173AAFEC00906D7F /* CFCFeedItemsGetViewController.m in Sources */,
 				E2734C7F173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m in Sources */,
+				E2E84D8B173D3D47008AA142 /* CFCFeedItemsListIdsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@
 #import "CFCFeedItemsChangedViewController.h"
 #import "CFCFeedItemsGetViewController.h"
 #import "CFCStreamStreamItemIdsViewController.h"
+#import "CFCFeedItemsListIdsViewController.h"
 
 @interface CFCActionsViewController ()
 
@@ -68,7 +69,7 @@
     }
 
     if (section == 2) {
-        return 6;
+        return 7;
     }
 
     if (section == 3) {
@@ -125,6 +126,9 @@
     if(indexPath.section == 2 && indexPath.row == 5) {
         cell.textLabel.text = @"Get Specific Feed Items";
     }
+    if(indexPath.section == 2 && indexPath.row == 6) {
+        cell.textLabel.text = @"Get Feed Item IDs";
+    }
 
     
     if(indexPath.section == 3 && indexPath.row == 0) {
@@ -178,6 +182,10 @@
     if(indexPath.section == 2 && indexPath.row == 5) {
         self.detailViewController = [[CFCFeedItemsGetViewController alloc] initWithNibName:@"CFCFeedItemsGetViewController" bundle:nil];
     }
+    if(indexPath.section == 2 && indexPath.row == 6) {
+        self.detailViewController = [[CFCFeedItemsListIdsViewController alloc] initWithNibName:@"CFCFeedItemsListIdsViewController" bundle:nil];
+    }
+    
     
     if(indexPath.section == 3 && indexPath.row == 0) {
         self.detailViewController = [[CFCStreamsListViewController alloc] initWithNibName:@"CFCStreamsListViewController" bundle:nil];
