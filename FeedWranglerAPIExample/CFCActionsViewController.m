@@ -22,6 +22,7 @@
 #import "CFCFeedItemsGetViewController.h"
 #import "CFCStreamStreamItemIdsViewController.h"
 #import "CFCFeedItemsListIdsViewController.h"
+#import "CFCStreamsCreateUpdateViewController.h"
 
 @interface CFCActionsViewController ()
 
@@ -73,7 +74,7 @@
     }
 
     if (section == 3) {
-        return 3;
+        return 4;
     }
 
     return 0;
@@ -140,6 +141,9 @@
     if(indexPath.section == 3 && indexPath.row == 2) {
         cell.textLabel.text = @"Get Stream Item IDs";
     }
+    if(indexPath.section == 3 && indexPath.row == 3) {
+        cell.textLabel.text = @"Create/Update Stream";
+    }
     
     return cell;
 }
@@ -197,6 +201,9 @@
         self.detailViewController = [[CFCStreamStreamItemIdsViewController alloc] initWithNibName:@"CFCStreamStreamItemIdsViewController" bundle:nil];
     }
 
+    if(indexPath.section == 3 && indexPath.row == 3) {
+        self.detailViewController = [[CFCStreamsCreateUpdateViewController alloc] initWithNibName:@"CFCStreamsCreateUpdateViewController" bundle:nil];
+    }
     
     [self.navigationController pushViewController:self.detailViewController animated:YES];
 }

@@ -13,6 +13,8 @@
 		E2734C7B173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2734C79173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib */; };
 		E2734C7F173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2734C7D173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m */; };
 		E2734C80173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2734C7E173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib */; };
+		E27D84E417415D4500212973 /* CFCStreamsCreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D84E217415D4500212973 /* CFCStreamsCreateUpdateViewController.m */; };
+		E27D84E517415D4500212973 /* CFCStreamsCreateUpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27D84E317415D4500212973 /* CFCStreamsCreateUpdateViewController.xib */; };
 		E2E17E381738115E007B5FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E17E371738115E007B5FF0 /* UIKit.framework */; };
 		E2E17E3A1738115E007B5FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E17E391738115E007B5FF0 /* Foundation.framework */; };
 		E2E17E3C1738115E007B5FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E17E3B1738115E007B5FF0 /* CoreGraphics.framework */; };
@@ -60,6 +62,9 @@
 		E2734C7C173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCStreamStreamItemIdsViewController.h; sourceTree = "<group>"; };
 		E2734C7D173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCStreamStreamItemIdsViewController.m; sourceTree = "<group>"; };
 		E2734C7E173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCStreamStreamItemIdsViewController.xib; sourceTree = "<group>"; };
+		E27D84E117415D4500212973 /* CFCStreamsCreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCStreamsCreateUpdateViewController.h; sourceTree = "<group>"; };
+		E27D84E217415D4500212973 /* CFCStreamsCreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCStreamsCreateUpdateViewController.m; sourceTree = "<group>"; };
+		E27D84E317415D4500212973 /* CFCStreamsCreateUpdateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFCStreamsCreateUpdateViewController.xib; sourceTree = "<group>"; };
 		E2E17E341738115E007B5FF0 /* FeedWranglerAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedWranglerAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E17E371738115E007B5FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E2E17E391738115E007B5FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -267,6 +272,9 @@
 				E2734C7C173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.h */,
 				E2734C7D173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m */,
 				E2734C7E173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib */,
+				E27D84E117415D4500212973 /* CFCStreamsCreateUpdateViewController.h */,
+				E27D84E217415D4500212973 /* CFCStreamsCreateUpdateViewController.m */,
+				E27D84E317415D4500212973 /* CFCStreamsCreateUpdateViewController.xib */,
 			);
 			name = Streams;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 				E2734C7B173AAFEC00906D7F /* CFCFeedItemsGetViewController.xib in Resources */,
 				E2734C80173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.xib in Resources */,
 				E2E84D8C173D3D47008AA142 /* CFCFeedItemsListIdsViewController.xib in Resources */,
+				E27D84E517415D4500212973 /* CFCStreamsCreateUpdateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +380,7 @@
 				E2734C7A173AAFEC00906D7F /* CFCFeedItemsGetViewController.m in Sources */,
 				E2734C7F173AB5A400906D7F /* CFCStreamStreamItemIdsViewController.m in Sources */,
 				E2E84D8B173D3D47008AA142 /* CFCFeedItemsListIdsViewController.m in Sources */,
+				E27D84E417415D4500212973 /* CFCStreamsCreateUpdateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
