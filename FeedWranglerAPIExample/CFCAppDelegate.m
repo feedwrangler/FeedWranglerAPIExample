@@ -18,6 +18,7 @@
 
     CFCActionsViewController *masterViewController = [[CFCActionsViewController alloc] initWithStyle:UITableViewStylePlain];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    self.navigationController.navigationBar.translucent = NO;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
